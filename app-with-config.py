@@ -1,15 +1,8 @@
 from flask import Flask, request, jsonify
 import mysql.connector
+from config import db_config  # Import the db_config
 
 app = Flask(__name__)
-
-# MySQL configuration
-db_config = {
-    'user': 'root',
-    'password': '',
-    'host': 'localhost',
-    'database': 'flaskdb'
-}
 
 # Database connection
 
